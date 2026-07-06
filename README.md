@@ -1,8 +1,8 @@
 # Sleep Tracker — GPT-5.5 → Flutter Migration
 
-> This is repo 2 of 7 from my M.Sc. thesis at McMaster University, *"Who Moved My Button?": A Usability Evaluation of LLM-Assisted Cross-Platform Migration*. I had two AI coding agents (Claude Sonnet 4.6 and GPT-5.5) each migrate a real mobile health app to three different frameworks, then evaluated all 7 resulting apps for usability. This repo is GPT-5.5's rewrite in Flutter. The other six are linked below.
+> Repo 2/7 from my M.Sc. thesis, *"Who Moved My Button?"* (McMaster, 2026) — GPT-5.5's migration to Flutter, tied 4th of the six. Other repos + baseline linked below.
 
-Flutter/Dart rewrite of the original React Native "Sleep Tracker" privacy-transparency app, produced by **GPT-5.5** under a shared 15-rule migration prompt I wrote. It talks to the same Node.js/Express backend as the original app (see [thesis-privacy-baseline](https://github.com/MelvinMo/thesis-privacy-baseline)).
+Flutter/Dart rewrite of the original React Native "Sleep Tracker" privacy-transparency app, produced by **GPT-5.5** under a shared 15-rule migration prompt I wrote. It talks to the same Node.js/Express backend as the original app (see [llm-migration-sleeptracker-baseline](https://github.com/MelvinMo/llm-migration-sleeptracker-baseline)).
 
 ---
 
@@ -24,13 +24,13 @@ The entire application is a single 9,477-line Dart file — models, BLoCs, servi
 
 | Repo | Description |
 |---|---|
-| [thesis-privacy-baseline](https://github.com/MelvinMo/thesis-privacy-baseline) | Original React Native app (unmodified snapshot) |
-| [thesis-privacy-sonnet46-kmp](https://github.com/MelvinMo/thesis-privacy-sonnet46-kmp) | Claude Sonnet 4.6 → KMP |
-| [thesis-privacy-sonnet46-flutter](https://github.com/MelvinMo/thesis-privacy-sonnet46-flutter) | Claude Sonnet 4.6 → Flutter |
-| [thesis-privacy-sonnet46-maui](https://github.com/MelvinMo/thesis-privacy-sonnet46-maui) | Claude Sonnet 4.6 → .NET MAUI |
-| [thesis-privacy-gpt55-kmp](https://github.com/MelvinMo/thesis-privacy-gpt55-kmp) | GPT-5.5 → KMP |
-| **thesis-privacy-gpt55-flutter** | **This repo** — GPT-5.5 → Flutter |
-| [thesis-privacy-gpt55-maui](https://github.com/MelvinMo/thesis-privacy-gpt55-maui) | GPT-5.5 → .NET MAUI |
+| [llm-migration-sleeptracker-baseline](https://github.com/MelvinMo/llm-migration-sleeptracker-baseline) | Original React Native app (unmodified snapshot) |
+| [llm-migration-sleeptracker-sonnet46-kmp](https://github.com/MelvinMo/llm-migration-sleeptracker-sonnet46-kmp) | Claude Sonnet 4.6 → KMP |
+| [llm-migration-sleeptracker-sonnet46-flutter](https://github.com/MelvinMo/llm-migration-sleeptracker-sonnet46-flutter) | Claude Sonnet 4.6 → Flutter |
+| [llm-migration-sleeptracker-sonnet46-maui](https://github.com/MelvinMo/llm-migration-sleeptracker-sonnet46-maui) | Claude Sonnet 4.6 → .NET MAUI |
+| [llm-migration-sleeptracker-gpt55-kmp](https://github.com/MelvinMo/llm-migration-sleeptracker-gpt55-kmp) | GPT-5.5 → KMP |
+| **llm-migration-sleeptracker-gpt55-flutter** | **This repo** — GPT-5.5 → Flutter |
+| [llm-migration-sleeptracker-gpt55-maui](https://github.com/MelvinMo/llm-migration-sleeptracker-gpt55-maui) | GPT-5.5 → .NET MAUI |
 
 ---
 
@@ -111,7 +111,7 @@ flutter run \
 
 - On the Android **emulator**, use `10.0.2.2` in place of your LAN IP (it aliases the host machine's `localhost`).
 - On a **physical device**, use your computer's actual LAN IP (find it with `ipconfig` on Windows or `ifconfig` on Mac).
-- To run the backend locally, see [thesis-privacy-baseline](https://github.com/MelvinMo/thesis-privacy-baseline).
+- To run the backend locally, see [llm-migration-sleeptracker-baseline](https://github.com/MelvinMo/llm-migration-sleeptracker-baseline).
 
 If more than one device is connected, target one explicitly:
 ```bash
