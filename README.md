@@ -1,14 +1,14 @@
 # Sleep Tracker — GPT-5.5 → Flutter Migration
 
-> **Thesis artifact 2 of 7.** This repository is one implementation from a McMaster University M.Sc. thesis studying whether AI coding agents can migrate a mobile health app across frameworks without degrading usability. See [Thesis citation](#thesis-citation) and [Related repositories](#related-repositories) below.
+> This is repo 2 of 7 from my M.Sc. thesis at McMaster University, *"Who Moved My Button?": A Usability Evaluation of LLM-Assisted Cross-Platform Migration*. I had two AI coding agents (Claude Sonnet 4.6 and GPT-5.5) each migrate a real mobile health app to three different frameworks, then evaluated all 7 resulting apps for usability. This repo is GPT-5.5's rewrite in Flutter. The other six are linked below.
 
-Flutter/Dart rewrite of the original React Native "Sleep Tracker" privacy-transparency app, produced by **GPT-5.5** under a shared 15-rule migration prompt. It talks to the same Node.js/Express backend as the original app (see [thesis-privacy-baseline](https://github.com/MelvinMo/thesis-privacy-baseline)).
+Flutter/Dart rewrite of the original React Native "Sleep Tracker" privacy-transparency app, produced by **GPT-5.5** under a shared 15-rule migration prompt I wrote. It talks to the same Node.js/Express backend as the original app (see [thesis-privacy-baseline](https://github.com/MelvinMo/thesis-privacy-baseline)).
 
 ---
 
-## Usability findings (from the thesis)
+## Usability findings (from my thesis)
 
-This migration was evaluated with Nielsen's ten usability heuristics across six standardized tasks by a single assessor (severity 0–4, lower is better). Full detail is in **Chapter 5** of the thesis (App 2).
+This migration was evaluated with Nielsen's ten usability heuristics across six standardized tasks by a single assessor (severity 0–4, lower is better). Full detail is in **Chapter 5** of my thesis (App 2).
 
 | Metric | Value |
 |---|---|
@@ -40,7 +40,6 @@ The entire application is a single 9,477-line Dart file — models, BLoCs, servi
 |------|---------|---------|
 | Flutter SDK | 3.x | https://docs.flutter.dev/get-started/install |
 | Android Studio | latest | Android SDK + platform tools |
-| Xcode 14+ | latest (Mac only) | for iOS builds |
 
 Verify your setup:
 ```bash
@@ -146,7 +145,6 @@ The app may request **Microphone** (sleep audio monitoring), **Notifications** (
 ├── lib/
 │   └── main.dart          # Entire app: models, BLoCs, services, screens, widgets, routing, DB
 ├── android/                # Android native project
-├── ios/                    # iOS native project (Mac only)
 ├── .env.example             # Backend URL reference values (see Section 3)
 └── .gitignore
 ```
@@ -164,11 +162,11 @@ The app may request **Microphone** (sleep audio monitoring), **Notifications** (
 
 ---
 
-## Known limitations (from the thesis)
+## Known limitations (from my thesis)
 
 - The entire application is implemented in a single 9,477-line file rather than split into conventional `lib/models/`, `lib/blocs/`, `lib/screens/`, `lib/services/` directories.
 - H8 (Aesthetic and Minimalist Design) is the only heuristic that improved over baseline; H1, H3, H5, H6, and H9 all regressed.
-- See Chapter 5 of the thesis for the full task-by-task and heuristic-by-heuristic severity breakdown, including the two other GPT-5.5 migrations (KMP, MAUI).
+- See Chapter 5 of my thesis for the full task-by-task and heuristic-by-heuristic severity breakdown, including the two other GPT-5.5 migrations (KMP, MAUI).
 
 ---
 
@@ -178,9 +176,9 @@ This repository contains **no real credentials**. `.env.example` holds placehold
 
 ---
 
-## Thesis citation
+## Citing my thesis
 
-If you reference this artifact, please cite:
+If you're referencing this repo, here's the full citation:
 
 > Mokhtari, M. (2026). *"Who Moved My Button?": A Usability Evaluation of LLM-Assisted Cross-Platform Migration* [Master's thesis, McMaster University]. Department of Computing and Software. Supervisor: Richard F. Paige.
 
@@ -188,4 +186,4 @@ If you reference this artifact, please cite:
 
 ## License
 
-All rights reserved. This repository is published for academic review and reproducibility alongside the thesis above. No license is granted for reuse, modification, or redistribution without permission from the author.
+All rights reserved — this is my thesis work. I've published it publicly so it's easy to review and reproduce, but please reach out to me before reusing or redistributing any of it.
