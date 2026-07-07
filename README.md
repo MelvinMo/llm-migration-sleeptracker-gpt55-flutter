@@ -1,6 +1,6 @@
 # Sleep Tracker — GPT-5.5 → Flutter Migration
 
-> Repo 2/7 from my M.Sc. thesis, *"Who Moved My Button?"* (McMaster, 2026) — GPT-5.5's migration to Flutter, tied 4th of the six. Other repos + baseline linked below.
+> Repo 6/7 from my M.Sc. thesis, *"Who Moved My Button?"* (McMaster, 2026) — GPT-5.5's migration to Flutter, tied 4th of the six. Other repos + baseline linked below.
 
 Flutter/Dart rewrite of the original React Native "Sleep Tracker" privacy-transparency app, produced by **GPT-5.5** under a shared 15-rule migration prompt I wrote. It talks to the same Node.js/Express backend as the original app (see [llm-migration-sleeptracker-baseline](https://github.com/MelvinMo/llm-migration-sleeptracker-baseline)).
 
